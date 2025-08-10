@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Content & Forms</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      section {
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      form {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      fieldset {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+      }
+
+      legend {
+        font-weight: bold;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .media-container {
+        margin: 20px 0;
+      }
+
+      audio,
+      video {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .invalid {
+        border-color: #dc3545;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Enhanced HTML5 Content & Interactive Forms</h1>
+      <p>
+        This page demonstrates advanced HTML5 content elements including lists,
+        tables, media, and comprehensive form validation.
+      </p>
+    </header>
+
+    <main>
+      <!-- Lists Section -->
+      <section>
+        <h2>Programming Languages & Frameworks</h2>
+
+        <h3>Popular Frontend Technologies</h3>
+        <ul>
+          <li>HTML5 - Structure and semantics</li>
+          <li>CSS3 - Styling and animations</li>
+          <li>JavaScript - Interactivity and logic</li>
+          <li>React - Component-based UI library</li>
+          <li>Vue.js - Progressive JavaScript framework</li>
+        </ul>
+
+        <h3>Backend Development Steps</h3>
+        <ol>
+          <li>Choose a programming language (Python, Node.js, Java)</li>
+          <li>Set up development environment</li>
+          <li>Design database schema</li>
+          <li>Create API endpoints</li>
+          <li>Implement authentication</li>
+          <li>Test and deploy</li>
+        </ol>
+
+        <h3>Web Development Stack</h3>
+        <dl>
+          <dt>MEAN Stack</dt>
+          <dd>MongoDB, Express.js, Angular, Node.js</dd>
+
+          <dt>MERN Stack</dt>
+          <dd>MongoDB, Express.js, React, Node.js</dd>
+
+          <dt>LAMP Stack</dt>
+          <dd>Linux, Apache, MySQL, PHP</dd>
+
+          <dt>JAMstack</dt>
+          <dd>JavaScript, APIs, Markup</dd>
+        </dl>
+      </section>
+
+      <!-- Tables Section -->
+      <section>
+        <h2>Project Timeline & Resources</h2>
+
+        <table>
+          <caption>
+            Web Development Project Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>Phase</th>
+              <th>Duration</th>
+              <th>Deliverables</th>
+              <th>Team Members</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Planning</td>
+              <td>1 week</td>
+              <td>Requirements document, wireframes</td>
+              <td>3</td>
+              <td>✅ Complete</td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>2 weeks</td>
+              <td>UI mockups, style guide</td>
+              <td>2</td>
+              <td>🔄 In Progress</td>
+            </tr>
+            <tr>
+              <td>Development</td>
+              <td>4 weeks</td>
+              <td>Functional website</td>
+              <td>4</td>
+              <td>⏳ Pending</td>
+            </tr>
+            <tr>
+              <td>Testing</td>
+              <td>1 week</td>
+              <td>Test reports, bug fixes</td>
+              <td>2</td>
+              <td>⏳ Pending</td>
+            </tr>
+            <tr>
+              <td>Deployment</td>
+              <td>3 days</td>
+              <td>Live website</td>
+              <td>1</td>
+              <td>⏳ Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Media Section -->
+      <section>
+        <h2>Multimedia Content</h2>
+
+        <div class="media-container">
+          <h3>Project Images</h3>
+          <figure>
+            <img
+              src="https://via.placeholder.com/600x300/4CAF50/FFFFFF?text=Web+Development+Project"
+              alt="Web development project mockup"
+              width="600"
+              height="300"
+            />
+            <figcaption>Main project dashboard mockup</figcaption>
+          </figure>
+        </div>
+
+        <div class="media-container">
+          <h3>Tutorial Audio</h3>
+          <audio controls preload="metadata">
+            <source
+              src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+              type="audio/wav"
+            />
+            <source
+              src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+          <p>
+            <em
+              >Note: Audio file is a placeholder - replace with actual tutorial
+              content</em
+            >
+          </p>
+        </div>
+
+        <div class="media-container">
+          <h3>Development Process Video</h3>
+          <video
+            controls
+            width="500"
+            height="300"
+            poster="https://via.placeholder.com/500x300/2196F3/FFFFFF?text=Video+Tutorial"
+          >
+            <source
+              src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="https://sample-videos.com/zip/10/webm/SampleVideo_1280x720_1mb.webm"
+              type="video/webm"
+            />
+            <track
+              kind="subtitles"
+              src="subtitles_en.vtt"
+              srclang="en"
+              label="English"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <p>
+            <em
+              >Note: Video file is a placeholder - replace with actual
+              development tutorial</em
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- Comprehensive Form Section -->
+      <section>
+        <h2>Project Registration Form</h2>
+
+        <form action="#" method="post" novalidate>
+          <!-- Personal Information -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                minlength="2"
+                maxlength="50"
+                pattern="[A-Za-z]+"
+                placeholder="Enter your first name"
+                autocomplete="given-name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                minlength="2"
+                maxlength="50"
+                pattern="[A-Za-z]+"
+                placeholder="Enter your last name"
+                autocomplete="family-name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@domain.com"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-456-7890"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="birthdate">Date of Birth</label>
+              <input
+                type="date"
+                id="birthdate"
+                name="birthdate"
+                min="1950-01-01"
+                max="2010-12-31"
+                autocomplete="bdate"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Project Details -->
+          <fieldset>
+            <legend>Project Information</legend>
+
+            <div class="form-group">
+              <label for="projectName">Project Name *</label>
+              <input
+                type="text"
+                id="projectName"
+                name="projectName"
+                required
+                minlength="3"
+                maxlength="100"
+                placeholder="Enter project name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="projectType">Project Type *</label>
+              <select id="projectType" name="projectType" required>
+                <option value="">Choose project type</option>
+                <option value="website">Website</option>
+                <option value="webapp">Web Application</option>
+                <option value="mobileapp">Mobile App</option>
+                <option value="api">API Service</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <input
+                type="range"
+                id="budget"
+                name="budget"
+                min="1000"
+                max="50000"
+                step="1000"
+                value="10000"
+              />
+              <output for="budget">$10000</output>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline">Project Timeline (weeks) *</label>
+              <input
+                type="number"
+                id="timeline"
+                name="timeline"
+                required
+                min="1"
+                max="52"
+                placeholder="Number of weeks"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="startDate">Preferred Start Date</label>
+              <input
+                type="datetime-local"
+                id="startDate"
+                name="startDate"
+                min="2025-08-11T00:00"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Technical Requirements -->
+          <fieldset>
+            <legend>Technical Requirements</legend>
+
+            <div class="form-group">
+              <label>Programming Languages (select all that apply):</label>
+              <input type="checkbox" id="html" name="languages" value="html" />
+              <label for="html">HTML5</label><br />
+
+              <input type="checkbox" id="css" name="languages" value="css" />
+              <label for="css">CSS3</label><br />
+
+              <input
+                type="checkbox"
+                id="javascript"
+                name="languages"
+                value="javascript"
+              />
+              <label for="javascript">JavaScript</label><br />
+
+              <input
+                type="checkbox"
+                id="python"
+                name="languages"
+                value="python"
+              />
+              <label for="python">Python</label><br />
+
+              <input
+                type="checkbox"
+                id="nodejs"
+                name="languages"
+                value="nodejs"
+              />
+              <label for="nodejs">Node.js</label>
+            </div>
+
+            <div class="form-group">
+              <label>Experience Level:</label>
+              <input
+                type="radio"
+                id="beginner"
+                name="experience"
+                value="beginner"
+                required
+              />
+              <label for="beginner">Beginner (0-1 years)</label><br />
+
+              <input
+                type="radio"
+                id="intermediate"
+                name="experience"
+                value="intermediate"
+              />
+              <label for="intermediate">Intermediate (2-5 years)</label><br />
+
+              <input
+                type="radio"
+                id="advanced"
+                name="experience"
+                value="advanced"
+              />
+              <label for="advanced">Advanced (5+ years)</label>
+            </div>
+
+            <div class="form-group">
+              <label for="website">Portfolio Website</label>
+              <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://yourportfolio.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Account Password *</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                placeholder="Minimum 8 characters with uppercase, lowercase, and number"
+                autocomplete="new-password"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password *</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+                placeholder="Re-enter your password"
+                autocomplete="new-password"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Additional Information -->
+          <fieldset>
+            <legend>Additional Details</legend>
+
+            <div class="form-group">
+              <label for="description">Project Description</label>
+              <textarea
+                id="description"
+                name="description"
+                rows="5"
+                maxlength="1000"
+                placeholder="Describe your project requirements, goals, and any specific features you need..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="priority">Priority Level *</label>
+              <select id="priority" name="priority" required>
+                <option value="">Select priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="referral">How did you hear about us?</label>
+              <input
+                type="text"
+                id="referral"
+                name="referral"
+                list="referralSources"
+                placeholder="Type or select from suggestions"
+              />
+              <datalist id="referralSources">
+                <option value="Google Search"></option>
+                <option value="Social Media"></option>
+                <option value="Friend Recommendation"></option>
+                <option value="Online Advertisement"></option>
+                <option value="Professional Network"></option>
+                <option value="Other"></option>
+              </datalist>
+            </div>
+
+            <div class="form-group">
+              <label for="specialRequests">Special Requests</label>
+              <input
+                type="text"
+                id="specialRequests"
+                name="specialRequests"
+                readonly
+                value="Please contact us directly for custom requirements"
+                title="This field is read-only. Contact support for special requests."
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="yes"
+              />
+              <label for="newsletter"
+                >Subscribe to our newsletter for updates and tips</label
+              >
+            </div>
+
+            <div class="form-group">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                value="agreed"
+                required
+              />
+              <label for="terms"
+                >I agree to the
+                <a href="#" target="_blank">Terms of Service</a> and
+                <a href="#" target="_blank">Privacy Policy</a> *</label
+              >
+            </div>
+          </fieldset>
+
+          <!-- Form Actions -->
+          <div class="form-group">
+            <button type="submit">Submit Application</button>
+            <button type="reset">Clear Form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Enhanced HTML5 Content Demo. This page demonstrates advanced
+        HTML5 features including semantic elements, form validation, and
+        multimedia integration.
+      </p>
+    </footer>
+  </body>
+</html>
